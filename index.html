@@ -13,17 +13,19 @@
             Limitovaná sleva 50%
         </div>
         <nav class="navbar">
-            <div class="menu-icon">
-                &#9776;
+            <div class="navbar__hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>   
             <h1 class="title">Acoustic</h1>
+            <ul id="menuItems" class="navbar__menu">
+                <li><a href="#">Domů</a></li>
+                <li><a href="#">Produkty</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
         </nav>
-        <div class="gradient-div">
+        <div class="header__content">
             <h1 class="header__title">Poslechněte si <span class="text--blue">úžásný</span> zvuk hudby</h1>
             <p class="header__text">Zajižte hudbu jako nikdy předtím</p>
             <a href="" class="header__button">Začít poslouchat</a>
@@ -142,6 +144,13 @@
             &copy; 2024 Acoustic. All rights reserved.
         </div>
     </footer>
-    
+    <script>
+        function toggleMenu() {
+            var menuItems = document.getElementById("menuItems");
+            var menuIcon = document.querySelector(".menu-icon");
+            menuItems.classList.toggle("open");
+            menuIcon.classList.toggle("closed");
+        }
+    </script>
 </body>
 </html>
