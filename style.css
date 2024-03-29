@@ -181,9 +181,10 @@ body {
     align-items: start;
     justify-content: center;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    Background-color: white;
+    border-radius: 25px;
+    box-shadow: 10px 10px 20px #d9d9d9,
+    -10px -10px 20px #ffffff;
 }
 
 .values_section__value span {
@@ -194,3 +195,153 @@ body {
 .values_section__value h3 {
     margin-bottom: 10px;
 }
+
+.email__section {
+    font-family: Popins, sans-serif;
+    background: linear-gradient(to bottom, var(--light-yellow), var(--yellow));
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.email__section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.email__section--small {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.email__section__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email__section__form input[type="email"] {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    background: none; /* průhledné pole pro vyplnění emailu */
+    margin-right: 10px;
+}
+
+.email__section__form input[type="email"]:focus {
+    outline: none;
+    border-bottom-color: #007bff; /* podtržení na spod při zaměření */
+}
+
+.email__section__form button {
+    color: #757575;
+    background: none;
+    border: none;
+}
+
+.email__section__form button.clean-button:hover {
+    text-decoration: underline; /* podtržení tlačítka při najetí myší */
+}
+
+.icon-mail2 {
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+.email__section__form--underline {
+    border-bottom: 2px solid #757575; /* podtržení pro celý formulář */
+    padding-bottom: 15px; /* prostor pod formulářem */
+}
+
+.footer {
+    font-family: Poppins, sans-serif;
+    background-color: #000;
+    color: #fff;
+    padding: 30px 0;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.footer__content {
+    margin-bottom: 20px;
+}
+
+.footer__content h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.footer-description {
+    font-size: 0.8em;
+    margin-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.footer__menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer__menu ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer__menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer__menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer--divider2 {
+    border: 1px solid #757575;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.footer__social-icons {
+    margin-bottom: 40px;
+}
+
+.footer__social-icons a:hover {
+    text-decoration: underline;
+}
+
+.footer__social-icons a {
+    color: #fff;
+    font-size: 1.5em;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer__legal-links {
+    margin-bottom: 40px;
+}
+
+.footer__legal-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer__legal-links a:hover {
+    text-decoration: underline;
+}
+
+.footer__copyright {
+    color: #757575;
+    font-size: 0.8em;
+}
+
+.footer--divider1 {
+    border: 1px solid #757575;
+    width: 10%;
+    margin: 10px auto;
+}
+
