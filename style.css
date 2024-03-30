@@ -8,26 +8,22 @@
     --blue: #377DFF;
 }
 
-body {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html {
+    font-family: 'Poppins', sans-serif;
 }
 
 .discount-banner {
     width: 100%;
-    height: 36px;
+    height: 40px;
     background-color: black;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .navbar {
-    font-family: 'Poppins', sans-serif;
     height: 56px;
     background-color: var(--light-yellow);
     display: flex;
@@ -55,6 +51,12 @@ body {
     padding: 0 8px;
 }
 
+.header__content--right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .text--blue {
     color: var(--blue);
@@ -80,7 +82,6 @@ body {
 }
 
 .header__image {
-    margin: 20px auto 0;
     max-width: 80%;
 }
 
@@ -169,7 +170,7 @@ body {
 .values_section {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* This will create 2 columns */
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
 }
@@ -223,13 +224,13 @@ body {
     padding: 10px;
     border: none;
     border-bottom: 2px solid transparent;
-    background: none; /* průhledné pole pro vyplnění emailu */
+    background: none; 
     margin-right: 10px;
 }
 
 .email__section__form input[type="email"]:focus {
     outline: none;
-    border-bottom-color: #007bff; /* podtržení na spod při zaměření */
+    border-bottom-color: #007bff;
 }
 
 .email__section__form button {
@@ -239,7 +240,7 @@ body {
 }
 
 .email__section__form button.clean-button:hover {
-    text-decoration: underline; /* podtržení tlačítka při najetí myší */
+    text-decoration: underline;
 }
 
 .icon-mail2 {
@@ -248,12 +249,11 @@ body {
 }
 
 .email__section__form--underline {
-    border-bottom: 2px solid #757575; /* podtržení pro celý formulář */
-    padding-bottom: 15px; /* prostor pod formulářem */
+    border-bottom: 2px solid #757575;
+    padding-bottom: 15px; 
 }
 
 .footer {
-    font-family: Poppins, sans-serif;
     background-color: #000;
     color: #fff;
     padding: 30px 0;
@@ -369,7 +369,7 @@ body {
     transform: translateY(-8px) rotate(-45deg);
 }
 
-.navbar ul {
+.navbar menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -381,7 +381,7 @@ body {
     width: 100%;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
-.navbar ul.open {
+.navbar menu.open {
     display: block;
 }
 .navbar li {
@@ -396,4 +396,133 @@ body {
     text-decoration: none;
     color: #000;
     font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .navbar__hamburger {
+        display: none;
+    }
+    
+    .navbar menu {
+        position: static;
+        display: flex;
+        gap: 1.5rem;
+        justify-content: end;
+        padding: 0 20px;
+        box-shadow: none;
+        background-color: transparent;
+        width: auto;
+    }
+    
+    .navbar li {
+        border: none;
+    }
+    .navbar {
+        justify-content: space-between;
+        padding: 0 4rem;
+    }
+    
+    .header__content {
+        padding-left: 2.5rem;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+    
+    .header__title {
+        font-size: 3.5rem;
+        text-align: left;
+    }
+    .header__content--right {
+        margin-left: 1rem;
+        margin-right: 5em;
+        align-items: start;
+    }
+    
+    .header__image {
+        min-width: 37%;
+        max-width: 50%;
+        display: block;
+    }
+    
+    .products_section {
+        padding: 0 8rem;
+    }
+    
+    .products_section__title {
+        font-size: 1.4rem;
+    }
+
+    .product__button {
+        display: none;
+    }
+
+    .product {
+        position: relative;
+    }
+    .product:hover .product__button {
+        display: block;
+        position: absolute;
+        bottom: 5.8rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .values_section {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 2rem 8rem;
+    }
+
+    .email__section{
+        padding: 100px 10rem;
+    }
+
+    .footer__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__top-row {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .footer__bottom-row {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .footer__left,
+    .footer__right {
+        flex-basis: 50%;
+    }
+
+    .footer__left {
+        text-align: left;
+    }
+
+    .footer__right {
+        text-align: right;
+    }
+
+    .footer__menu ul {
+        flex-direction: row;
+        justify-content: end;
+        align-items: end;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .header__title {
+        font-size: 6rem;
+    }   
+
+    .email__section{
+        padding: 100px 30rem;
+    }
 }
