@@ -1,4 +1,4 @@
-@import url(assets/icomoon.css);
+@import url(../icomoon.css);
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -104,6 +104,12 @@ html {
     text-decoration: none;
 }
 
+.products_section__title > a:hover {
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+
 .products_section__products {
     display: flex;
     gap: 20px;
@@ -136,6 +142,7 @@ html {
     margin: 0;
     padding: 5px;
     border-radius: 5px;
+    margin-bottom: 0.4rem;
 }
 
 .product__button {
@@ -427,6 +434,7 @@ html {
         padding-left: 2.5rem;
         flex-direction: row-reverse;
         justify-content: space-around;
+        
     }
     
     .header__title {
@@ -436,6 +444,7 @@ html {
     .header__content--right {
         margin-left: 1rem;
         margin-right: 5em;
+        padding-bottom: 2rem;
         align-items: start;
     }
     
@@ -460,11 +469,16 @@ html {
     .product {
         position: relative;
     }
+
+    .product__top {
+        padding: 1.2rem;
+    }
     .product:hover .product__button {
         display: block;
         position: absolute;
         bottom: 5.8rem;
         left: 50%;
+        width: 60%;
         transform: translateX(-50%);
     }
 
