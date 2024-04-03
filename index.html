@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <div class="discount-banner">
+        <div class="discount_banner">
             <span class="icon-price-tags"></span>
             Limitovaná sleva 50%
         </div>
@@ -23,7 +23,7 @@
             <h1 class="title">Acoustic</h1>
             <menu id="menuItems" class="navbar__menu">
                 <li><a href="#">Domů</a></li>
-                <li><a href="#">Produkty</a></li>
+                <li><a href="products.html">Produkty</a></li>
                 <li><a href="#">Kontakt</a></li>
             </menu>
         </nav>
@@ -31,7 +31,7 @@
             <div class="header__content--right">
                 <h1 class="header__title">Poslechněte si <span class="text--blue">úžásný</span> zvuk hudby</h1>
                 <p class="header__text">Zajižte hudbu jako nikdy předtím</p>
-                <a href="" class="header__button">Začít poslouchat</a>
+                <a href="products.html" class="header__button">Začít poslouchat</a>
             </div>
             <img src="assets/images/header_man.png" alt="Muž s luxusními suchátky na hlavě" class="header__image">
         </div>
@@ -40,10 +40,10 @@
         <section class="products_section">
             <div class="products_section__title">
                 <h2>Produkty</h2>
-                <a href="">Další ►</a>
+                <a href="products.html">Další ►</a>
             </div>
             <div class="products_section__products">
-                <div class="product">
+                <div class="product --bigger">
                     <div class="product__top">
                         <p class="product_attr">NOVINKA</p>
                         <img src="assets/images/Headphones1.jpg" alt="Sluchátka 1">
@@ -57,7 +57,7 @@
                         <p>$299.99</p>
                     </div>
                 </div>
-                <div class="product">
+                <div class="product --bigger">
                     <div class="product__top">
                         <p class="product_attr">NOVINKA</p>
                         <img src="assets/images/Headphones1.jpg" alt="Sluchátka 1">
@@ -71,7 +71,7 @@
                         <p>$349.99</p>
                     </div>
                 </div>
-                <div class="product">
+                <div class="product --bigger">
                     <div class="product__top">
                         <p class="product_attr">NOVINKA</p>
                         <img src="assets/images/Headphones1.jpg" alt="Sluchátka 1">
@@ -85,7 +85,7 @@
                         <p>$149.99</p>
                     </div>
                 </div>
-                <div class="product">
+                <div class="product --bigger">
                     <div class="product__top">
                         <p class="product_attr">NOVINKA</p>
                         <img src="assets/images/Headphones1.jpg" alt="Sluchátka 1">
@@ -146,7 +146,7 @@
                     <nav class="footer__menu">
                         <ul>
                             <li><a href="#">Domů</a></li>
-                            <li><a href="#">Produkty</a></li>
+                            <li><a href="products.html">Produkty</a></li>
                             <li><a href="#">Kontakt</a></li>
                         </ul>
                     </nav>
@@ -173,13 +173,6 @@
             &copy; 2024 Acoustic. All rights reserved.
         </div>
     </footer>
-    <script>
-        function toggleMenu() {
-            var menuItems = document.getElementById("menuItems")
-            var menuIcon = document.querySelector(".navbar__hamburger")
-            menuItems.classList.toggle("open")
-            menuIcon.classList.toggle("closed")
-        }
-    </script>
+    <script src="assets/scripts/hamburger.js"></script>
 </body>
 </html>
