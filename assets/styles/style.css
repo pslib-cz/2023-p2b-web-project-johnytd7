@@ -81,6 +81,10 @@ html {
     text-decoration: none;
 }
 
+.header__button:hover {
+    background-color: var(--blue);
+}
+
 .header__image {
     max-width: 80%;
 }
@@ -162,6 +166,11 @@ html {
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
+    transition: transform 0.3s ease-in-out
+}
+
+.product__button:hover {
+    transform: scale(1.1);
 }
 
 .card__apprise{
@@ -415,6 +424,15 @@ html {
   text-decoration: none;
   transition-duration: .25s;
 }
+
+.navbar menu li:hover {
+    text-decoration: underline;
+}
+
+.navbar h1:hover {
+    text-decoration: underline;
+}
+
 .navbar menu.open {
     display: block;
 }
@@ -482,19 +500,10 @@ html {
         font-size: 1.4rem;
     }
 
-
-    /* .product {
-        position: relative;
-    } */
-
     .product__top {
         padding: 1.2rem;
     }
 
-    .values_section {
-        grid-template-columns: repeat(4, 1fr);
-        padding: 2rem 8rem;
-    }
 
     .email__section{
         padding: 100px 10rem;
@@ -538,6 +547,10 @@ html {
         justify-content: end;
         align-items: end;
     }
+
+    .values_section {
+        padding: 2rem 8rem;
+    }
 }
 
 @media screen and (min-width: 1440px){
@@ -547,5 +560,10 @@ html {
 
     .email__section{
         padding: 100px 30rem;
+    }
+
+    .values_section {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 2rem 8rem;
     }
 }
