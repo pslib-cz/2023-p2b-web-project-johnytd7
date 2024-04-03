@@ -116,6 +116,12 @@ html {
     gap: 20px;
     overflow: auto;
     white-space: nowrap;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
+
+.product {
+    min-width: 200px;
 }
 
 .product__top {
@@ -134,7 +140,9 @@ html {
 }
 .product__top img {
     width: 100%;
+    height: auto;
     margin-bottom: 20px;
+    border-radius: 0.2rem;
 }
 
 .product_attr {
@@ -474,24 +482,13 @@ html {
         font-size: 1.4rem;
     }
 
-    .product__button {
-        display: none;
-    }
 
-    .product {
+    /* .product {
         position: relative;
-    }
+    } */
 
     .product__top {
         padding: 1.2rem;
-    }
-    .product:hover .product__button {
-        display: block;
-        position: absolute;
-        bottom: 5.8rem;
-        left: 50%;
-        width: 60%;
-        transform: translateX(-50%);
     }
 
     .values_section {
