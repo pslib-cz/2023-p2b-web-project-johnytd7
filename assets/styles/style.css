@@ -226,30 +226,30 @@ html {
     margin-bottom: 0.6rem;
 }
 
-.vemail-section {
+.email-section {
     font-family: Popins, sans-serif;
     background: linear-gradient(to right, var(--light-yellow), var(--yellow));
     text-align: center;
     padding: 6.2rem 1.2rem;
 }
 
-.vemail-section h2 {
+.email-section h2 {
     font-size: 2em;
     margin-bottom: 0.6rem;
 }
 
-.vemail-section--small {
+.email-section--small {
     font-size: 1em;
     margin-bottom: 1rem;
 }
 
-.vemail-section__form {
+.email-section__form {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.vemail-section__form input[type="email"] {
+.email-section__form input[type="email"] {
     width: 70%;
     padding: 0.6rem;
     border: none;
@@ -258,18 +258,18 @@ html {
     margin-right: 0.6rem;
 }
 
-.vemail-section__form input[type="email"]:focus {
+.email-section__form input[type="email"]:focus {
     outline: none;
     border-bottom-color: #007bff;
 }
 
-.vemail-section__form button {
+.email-section__form button {
     color: #757575;
     background: none;
     border: none;
 }
 
-.vemail-section__form button.clean-button:hover {
+.email-section__form button.clean-button:hover {
     text-decoration: underline;
 }
 
@@ -278,7 +278,7 @@ html {
     margin-right: 0.3rem;
 }
 
-.vemail-section__form--underline {
+.email-section__form--underline {
     border-bottom: 2px solid #757575;
     padding-bottom: 1rem; 
 }
@@ -454,7 +454,7 @@ html {
     font-size: 2rem;
 } 
 
-.products_gallery_section {
+.products-gallery-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.4rem;
@@ -550,7 +550,7 @@ html {
     }
 
 
-    .vemail-section{
+    .email-section{
         padding: 100px 10rem;
     }
 
@@ -601,7 +601,7 @@ html {
         font-size: 1.2rem;
     } 
 
-    .products_gallery_section {
+    .products-gallery-section {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
         padding: 2rem 8rem;
@@ -621,7 +621,7 @@ html {
         font-size: 6rem;
     }   
 
-    .vemail-section{
+    .email-section{
         padding: 100px 30rem;
     }
 
@@ -630,7 +630,7 @@ html {
         padding: 2rem 8rem;
     }
 
-    .products_gallery_section {
+    .products-gallery-section {
         grid-template-columns: repeat(4, 1fr);
     }
 }
