@@ -546,7 +546,7 @@ html {
     }
 
     .product__top {
-        padding: 1.2rem;
+        padding: 0.8rem;
     }
 
 
@@ -632,5 +632,9 @@ html {
 
     .products-gallery-section {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .product__top {
+        padding: 1.2rem;
     }
 }
