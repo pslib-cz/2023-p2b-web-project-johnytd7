@@ -419,7 +419,11 @@ html {
   opacity: 0.95;
 }
 
-.navbar.--white {
+.navbar--white menu {
+    background-color: white;
+}
+
+.navbar--white {
     background-color: white;
 }
 
@@ -468,6 +472,10 @@ html {
     align-items: center;
 }
 
+.page_location--left {
+    justify-content: start;
+}
+
 .page_location a {
     text-decoration: none;
     color: #333;
@@ -486,6 +494,10 @@ html {
 .header__content--small h1 {
     font-size: 2rem;
     margin: 0.2rem;
+}
+
+.header__content--contacts {
+
 }
 
 @media screen and (min-width: 768px) {
