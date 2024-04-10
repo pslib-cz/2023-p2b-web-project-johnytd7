@@ -419,14 +419,6 @@ html {
   opacity: 0.95;
 }
 
-.navbar--white menu {
-    background-color: white;
-}
-
-.navbar--white {
-    background-color: white;
-}
-
 .navbar menu li {
   display: block;
   padding: 0.75rem 1.5rem;
@@ -457,6 +449,14 @@ html {
 .navbar menu a {
     font-size: 2rem;
 } 
+
+.navbar--white menu {
+    background-color: white;
+}
+
+.navbar--white {
+    background-color: white;
+}
 
 .products-gallery-section {
     display: grid;
@@ -577,6 +577,7 @@ html {
     transition: transform 0.3s ease-in-out;
     border: 0;
     align-self: center;
+    cursor: pointer;
 }
 
 
@@ -585,13 +586,36 @@ html {
     transform: scale(1.1);
 }
 
-.header__content--contacts, .map-section, .contact-form,  .about-us, .contact-us{
+.form-group input[type="text"], .form-group input[type="email"], .form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.form-group input[type="text"]:focus, .form-group input[type="email"]:focus , .form-group textarea:focus {
+    border: 1px solid #4A90E2;
+    outline: none;
+}
+
+.header__content--contacts, .contact-form,  .about-us, .contact-us{
     padding-left: 2rem;
     padding-right: 2rem;
 }
 
-.map-section iframe {
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.contact-form iframe {
     max-width: 100%;
+    align-self: center;
 }
 
 .values-section--orange {
@@ -603,6 +627,10 @@ html {
     background: #FFAB00;
     box-shadow:  10px 10px 20px #d99100,
              -10px -10px 20px #ffc500;
+}
+
+.big-map {
+    display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -627,7 +655,7 @@ html {
     }
     .navbar {
         justify-content: space-between;
-        padding: 0 4rem;
+        padding: 0 2rem;
     }
     
     .header__content {
@@ -731,6 +759,93 @@ html {
     .header__content--small h1 {
         font-size: 4rem;
     }
+
+    .small-map {
+        display: none;
+    }
+
+    .big-map {
+        display: block;
+    }
+
+    .contact-form {
+        flex-direction: row;
+        gap: 2rem;
+        padding: 0 8rem;
+    }
+
+    .contact-form > * {
+        flex-basis: 1;
+    }
+
+    .contact-form iframe {
+        order: 2;
+    }
+
+    .form-group input[type="submit"] {
+        align-self: flex-start;
+    }
+
+    .about-us {
+        display: flex;
+    }
+
+    .header__content--contacts {
+        max-width: 65%;
+    }
+
+    .header__content--contacts, .navbar--white,  .contact-us, .about-us {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+
+    .contact-us {
+        padding: 6rem 8rem;
+    }
+
+    .contact-us > h2 {
+        font-size: 2.5rem;
+    }
+
+    .contact-us__info {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+
+    .header__content--contacts > h1 {
+        font-size: 4rem;
+    }
+
+    .contact-form > * {
+        flex: 1;
+    }
+
+    .about-us {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    .about-us img {
+        width: 50%;
+    }
+
+    .header__content--contacts > p {
+        font-size: 2rem;
+    }
+
+    .about-us__content {
+        justify-content: center;
+    }
+
+    .about-us__content > h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-us__content > p, .about-us__content > a {
+        font-size: 1.4rem;
+    }
+
 }
 
 @media screen and (min-width: 1200px){
