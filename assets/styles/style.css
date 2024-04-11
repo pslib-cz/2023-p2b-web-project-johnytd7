@@ -840,6 +840,15 @@ html {
         font-size: 1.2rem;
     }
 
+    .contact-form > * {
+        flex: 1;
+    }
+
+    .about-us {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
 }
 
 @media screen and (min-width: 1200px){
