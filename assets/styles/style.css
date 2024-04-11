@@ -362,7 +362,7 @@ html {
     text-decoration: underline;
 }
 
-.footer__copyright {
+.footer__end {
     color: #757575;
     font-size: 0.8em;
 }
@@ -847,6 +847,14 @@ html {
     .about-us {
         max-width: 70%;
         margin: 0 auto;
+    }
+
+    .footer__end {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 20px auto;
+
     }
 
 }
