@@ -814,19 +814,12 @@ html {
 
 
     .header__content--contacts > h1 {
-        font-size: 4rem;
-    }
-
-    .contact-form > * {
-        flex: 1;
-    }
-
-    .about-us {
-        max-width: 70%;
-        margin: 0 auto;
+        font-size: 3rem;
     }
 
     .about-us img {
+        aspect-ratio: 1/1;
+        flex-shrink: 0;
         width: 50%;
     }
 
@@ -840,10 +833,11 @@ html {
 
     .about-us__content > h2 {
         font-size: 2.5rem;
+        margin: 0;
     }
 
     .about-us__content > p, .about-us__content > a {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
 }
